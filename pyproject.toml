@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"] # REQUIRED if [build-system] table is used
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "okxpy_guagua"
+version = "0.1.1"
+description = "使用python的网络请求库requests实现okx加密货币交易所的api交互"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+keywords = ["jex", "okx" ,'python']
+authors = [{ name = "guagua", email = "guagua1053@gmail.com" }]
+maintainers = [
+  { name = "jex.huang", email = "guagua1053@gmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = ["requests"]
+
+
+[project.optional-dependencies]
+dev = ["check-manifest"]
+test = ["coverage"]
+
+[project.urls]
+"Homepage" = "https://github.com/dream-until-dawn/OKX-PYTHON-GUAGUA"
+"Bug Reports" = "https://github.com/dream-until-dawn/OKX-PYTHON-GUAGUA/issues"
