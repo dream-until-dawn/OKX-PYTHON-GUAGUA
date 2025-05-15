@@ -3,11 +3,12 @@ import json
 import base64
 import hmac
 import hashlib
+from typing import Any
 import requests
 
 
 class RequestBase:
-    def __init__(self, api_key: str, passphrase: str, secret_key: str):
+    def __init__(self, api_key: str, passphrase: str, secret_key: str) -> None:
         """
         初始化OKX请求类
 
@@ -70,11 +71,11 @@ class RequestBase:
         self,
         method: str,
         url: str,
-        params: dict = None,
-        body: dict = None,
+        params: dict = {},
+        body: dict = {},
         isSign: bool = False,
         endpoint: str = "",
-    ) -> dict[str, any]:
+    ) -> Any:
         """
         发起一个okx网络请求
 
