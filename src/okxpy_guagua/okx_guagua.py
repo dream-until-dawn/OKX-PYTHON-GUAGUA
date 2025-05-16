@@ -278,7 +278,7 @@ class OkxMarket(RequestBase):
         after: str,
         bar: str,
         limit: int = 10,
-    ) -> list[dict[str, str]]:
+    ) -> dict[str, Any]:
         """
 
         参数:
@@ -300,7 +300,7 @@ class OkxMarket(RequestBase):
         after: str,
         bar: str,
         limit: int = 100,
-    ) -> list[dict[str, str]]:
+    ) -> dict[str, Any]:
         """
 
         参数:
